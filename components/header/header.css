@@ -1,0 +1,21 @@
+.nav {  display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: column;
+    grid-template-areas:
+      "nav-l nav-r";
+  }
+  
+  .nav-l {
+    justify-self: stretch;
+    align-self: center;
+    grid-area: nav-l;
+  }
+  
+  .nav-r {
+    justify-self: end;
+    align-self: center;
+    grid-area: nav-r;
+  }
+  
