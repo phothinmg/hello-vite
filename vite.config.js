@@ -5,6 +5,11 @@ import remarkGfm from 'remark-gfm';
 import remarkFrontmatter from 'remark-frontmatter';
 // https://vitejs.dev/config/
 export default defineConfig({
+	server:{
+		port: 1847,
+		open: true,
+		
+	},
 	plugins: [
 		preact(),
 		mdx({

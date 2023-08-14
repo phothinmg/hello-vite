@@ -12,7 +12,7 @@
 		"paths": {
 			"/components/*":["components/*"],
 			"/style/*":["style/*"],
-			"/data/*":["data/*"]
+			"/lib/*":["lib/*"]
 		}
 	},
 	"include": ["node_modules/vite/client.d.ts", "**/*"]

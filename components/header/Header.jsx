@@ -1,6 +1,6 @@
 import './header.css';
 import {Themechange} from '../index';
-import navBarLink from '/data/navBarLink';
+import navBarLink from '../../lib/navBarLink';
 
 export default function Header() {
 
