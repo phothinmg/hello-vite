@@ -2,7 +2,7 @@
 /**Replace with your data */
 const siteData = {
     /**Attr to html <head> */
-    title: 'MM Simple Blog Template',
+    title: 'Hello Vite',
     description: 'Simple blog template for beginner to Vite.js and Preact',
     author: 'Nyein Maung',
     icon: '/assets/favicon.svg',

@@ -1,0 +1,23 @@
+.hero-container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: column dense;
+    grid-template-areas:
+      ". . ."
+      ". vite ."
+      ". . .";
+     
+  
+  }
+  
+  .vite {
+    justify-self: center;
+    align-self: center;
+    grid-area: vite;
+    
+
+    
+  }
+  
+  

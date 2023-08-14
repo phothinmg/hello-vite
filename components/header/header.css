@@ -5,6 +5,7 @@
     grid-auto-flow: column;
     grid-template-areas:
       "nav-l nav-r";
+     
   }
   
   .nav-l {
