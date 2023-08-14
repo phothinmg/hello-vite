@@ -8,7 +8,10 @@ export default defineConfig({
 	server:{
 		port: 1847,
 		open: true,
-		
+		},
+	build:{
+		manifest: true,
+		sourcemap: true
 	},
 	plugins: [
 		preact(),

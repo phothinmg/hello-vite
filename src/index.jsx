@@ -1,6 +1,6 @@
 import { render } from 'preact';
 import { LocationProvider, Router, Route } from 'preact-iso';
-import { Header } from '/components/index.js';
+import { Header ,Footer} from '/components/index.js';
 import  {Home}  from './pages/Home/index.jsx';
 import { NotFound } from './pages/_404.jsx';
 import '/style/simple.css';
@@ -17,6 +17,8 @@ export function App() {
 					<Route default component={NotFound} />
 				</Router>
 			</main>
+			<hr></hr>
+			<Footer/>
 		</LocationProvider>
 	);
 }

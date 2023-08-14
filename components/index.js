@@ -1,6 +1,8 @@
 import Header from "./header/Header";
 import Themechange from './theme-change-button/ThemeChange';
 import Hero from "./hero/Hero";
+import { GithubIcon } from "./social-icons";
+import Footer from "./footer/Footer";
 
 
 
@@ -8,6 +10,8 @@ import Hero from "./hero/Hero";
 export {
     Header,
     Themechange,
-    Hero
+    Hero,
+    GithubIcon,
+    Footer
 
 }
