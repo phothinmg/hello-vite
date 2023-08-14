@@ -1,6 +1,6 @@
 
 /**
- * See more about theme-change https://github.com/saadeghi/theme-change
+ *Inspired by https://github.com/saadeghi/theme-change
  * Easy to use 
  */
 function themeToggle() {
@@ -60,49 +60,9 @@ function themeToggle() {
   }
 }
 
-
-// function themeSelect() {
-//   const selectElement = document.querySelector("select[data-choose-theme]");
-//   const dataKey = selectElement?.getAttribute("data-key");
-//   const theme = localStorage.getItem(dataKey || "theme");
-
-//   if (theme) {
-//     document.documentElement.setAttribute("data-theme", theme);
-//     const optionTogglers = document.querySelectorAll(
-//       `select[data-choose-theme] [value='${theme}']`
-//     );
-//     optionTogglers.forEach((el) => {
-//       el.setAttribute('selected', 'selected');
-//     });
-//   }
-
-//   if (selectElement) {
-//     const changeHandler = function () {
-//       const selectedTheme = this.value;
-//       document.documentElement.setAttribute("data-theme", selectedTheme);
-//       localStorage.setItem(dataKey || "theme", selectedTheme);
-//       const optionTogglers = document.querySelectorAll(
-//         `select[data-choose-theme] [value='${selectedTheme}']`
-//       );
-//       optionTogglers.forEach((el) => {
-//         const optionValue = el.getAttribute('value');
-//         el.setAttribute('selected', optionValue === selectedTheme ? 'selected' : null);
-//       });
-//     };
-
-//     const selectElements = document.querySelectorAll("select[data-choose-theme]");
-//     selectElements.forEach((el) => {
-//       el.addEventListener("change", changeHandler);
-//     });
-//   }
-// }
-
-
- 
 function themeChange(attach = true) {
   const attachEvent = () => {
     themeToggle();
-    // themeSelect();
 
   };
 
