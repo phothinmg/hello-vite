@@ -7,9 +7,7 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
-		"preview": "vite preview",
-		"prepare": "husky install",
-		"test": "vite"
+		"preview": "vite preview"
 	},
 	"dependencies": {
 		"@mapbox/rehype-prism": "^0.7.0",
