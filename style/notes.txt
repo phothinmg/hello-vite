@@ -1,1 +1,0 @@
-- pre and code from prism js for markdown syntax 

@@ -1,6 +1,6 @@
-import './header.css';
-import {Themechange} from '../index';
-import navBarLink from '../../lib/navBarLink';
+
+import {ThemeSelect} from './index';
+import navBarLink from '../libary/navBarLink';
 
 export default function Header() {
 
@@ -19,7 +19,7 @@ export default function Header() {
 						))}
 					</div>
 					<div className="nav-r">
-						<Themechange/>
+						<ThemeSelect/>
 					</div>
 				</div>
 				

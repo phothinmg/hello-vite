@@ -1,15 +1,4 @@
-// import './theme-change.css';
-// import './themeChange';
-// export default ThemeChang => {
-//     return(
-//         <label class="switch">
-//             <input type="checkbox" data-toggle-theme="dark"/>
-//             <span class="slider round"></span>
-//         </label>
-//     )
-// };
-
-const ThemeChange = () => {
+const ThemeSelect = () => {
     const dataArray = ['light','dark'];
   
     const queryArray = () => {
@@ -41,4 +30,4 @@ const ThemeChange = () => {
       </div>
     );
   };
-export default ThemeChange
+export default ThemeSelect

@@ -1,4 +1,4 @@
-import './hero.css';
+
 import vite from '/images/Vite.png';
 
 export default Hero => {

@@ -7,14 +7,17 @@ import remarkFrontmatter from 'remark-frontmatter';
 export default defineConfig({
 	server:{
 		port: 1847,
-		open: true,
 		},
 	build:{
 		manifest: true,
 		sourcemap: true
 	},
 	plugins: [
-		preact(),
+		preact({
+			babel:{
+				babelrc: true,
+			}
+		}),
 		mdx({
 			providerImportSource: '@mdx-js/preact',
 			recmaPlugins:[

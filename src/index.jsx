@@ -4,11 +4,11 @@ import { Header ,Footer} from '/components/index.js';
 import  {Home}  from './pages/Home/index.jsx';
 import { About } from './pages/About.jsx';
 import { NotFound } from './pages/_404.jsx';
-import '/style/simple.css';
-import '/style/prism/prism -v2.js'
-import '/style/prism/prism -v2.css'
+import Prism from 'prismjs';
+import '/style/main.css';
 
 export function App() {
+	Prism.highlightAll();
 	return (
 	  <LocationProvider>
 		<Header />

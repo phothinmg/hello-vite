@@ -1,6 +1,5 @@
-import siteData from "/lib/siteData";
-import './footer.css';
-import { GithubIcon } from "..";
+import siteData from "../libary/siteData";
+import { GithubIcon } from ".";
 
 export default function (){
     return(

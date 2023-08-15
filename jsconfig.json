@@ -12,7 +12,7 @@
 		"paths": {
 			"/components/*":["components/*"],
 			"/style/*":["style/*"],
-			"/lib/*":["lib/*"],
+			"/libary/*":["libary/*"],
 			"/posts/*":["posts/*"]
 		}
 	},

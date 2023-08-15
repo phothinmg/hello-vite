@@ -1,15 +1,15 @@
-import Header from "./header/Header";
-import Themechange from './theme-change-button/ThemeChange';
-import Hero from "./hero/Hero";
-import { GithubIcon } from "./social-icons";
-import Footer from "./footer/Footer";
+import Header from "./Header";
+import ThemeSelect from "./ThemeChange";
+import Hero from "./Hero";
+import { GithubIcon } from "./SocialIcon";
+import Footer from "./Footer";
 
 
 
 
 export {
     Header,
-    Themechange,
+    ThemeSelect,
     Hero,
     GithubIcon,
     Footer
