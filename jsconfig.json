@@ -12,7 +12,8 @@
 		"paths": {
 			"/components/*":["components/*"],
 			"/style/*":["style/*"],
-			"/lib/*":["lib/*"]
+			"/lib/*":["lib/*"],
+			"/posts/*":["posts/*"]
 		}
 	},
 	"include": ["node_modules/vite/client.d.ts", "**/*"]

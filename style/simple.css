@@ -41,6 +41,18 @@
     opacity: 0.8;
   }
 }
+[data-theme='light']{
+  --bg: #fff;
+  --accent-bg: #f5f7ff;
+  --text: #212121;
+  --text-light: #585858;
+  --border: #898EA4;
+  --accent: #0d47a1;
+  --code: #d81b60;
+  --preformatted: #444;
+  --marked: #ffdd33;
+  --disabled: #efefef;
+}
 [data-theme='dark']{
   color-scheme: dark;
     --bg: #212121;
@@ -583,7 +595,7 @@ dt {
 }
 
 /* Use mono font for code elements */
-code,
+/* code,
 pre,
 pre span,
 kbd,
@@ -598,22 +610,22 @@ kbd {
   border-bottom: 3px solid var(--preformatted);
   border-radius: var(--standard-border-radius);
   padding: 0.1rem 0.4rem;
-}
+} */
 
-pre {
+/* pre {
   padding: 1rem 1.4rem;
   max-width: 100%;
   overflow: auto;
   color: var(--preformatted);
-}
+} */
 
 /* Fix embedded code within pre */
-pre code {
+/* pre code {
   color: var(--preformatted);
   background: none;
   margin: 0;
   padding: 0;
-}
+} */
 
 /* Progress bars */
 /* Declarations are repeated because you */
