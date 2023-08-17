@@ -1,154 +1,12 @@
 ---
-title: 'Myanmar Webfonts'
+titel : 'Post 4'
 date: '2023-08-18'
-description: 'MM fonts'
 ---
-
-# Myanmar Web Fonts
-***[မြန်မာလိုဒီကနေဖတ်လို့ရပါတယ်ဗျာ](https://www.phothin.uk/blog/myanmar-web-fonts)***
-## About
-Myanmaer Fonts (Noto Sans Myanmar, Padauk,Khyay)  from [Google Fonts](https://fonts.google.com/) for  the development of websites or applications.
-
-It has css-classes for font families, and font-effects provided by Google. You can add these css-classes to specific HTML elements where you want to add Myanmar fonts and font-effects. Install or download.zip for local offline development and also get it from a CDN (Content Delivery Network).
-
-These font families and font effects are copyrighted by Google Inc. and licensed under the SIL Open Font License(OFL).
-
-![Myanmar Fonts](https://github.com/phothinmg/myanmarwebfonts/blob/cdn/mmfonts.png)
-
-## Installation
-## npm
-Install using `npm`.
-
-```bash
-npm i myanmarwebfonts
-```
-
-#### React Next.js 
-
-You can use it as an external stylesheet; more information is available in 
-the [Next.js documantation](https://nextjs.org/docs/app/building-your-application/styling).
-
-Import to the `app/layout.tsx` -- TypeScript
-
-```javascript
-import '../node_modules/myanmarwebfonts/index.css'
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return (
-    <html lang="en">
-      <body className="container">{children}</body>
-    </html>
-  )
-}
-```
-
-Import to the `app/layout.js` -- JavaScript
-
-```javascript
-import '../node_modules/myanmarwebfonts/index.css'
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return (
-    <html lang="en">
-      <body className="container">{children}</body>
-    </html>
-  )
-}
-```
-
-#### Html CSS Js
-
-Add link for stylesheet to your html `<head>` 
-
-```html
-<link rel="stylesheet" href="./node_modules/myanmarwebfonts/index.css">
-```
-`test.js` for example.
-
-```test.js
-document.write('<link rel="stylesheet" href="./node_modules/myanmarwebfonts/index.css">');
-```
-Add `<script>` to your html  `<body>`.
-
-```html
-<script src="path_to/test.js"></script>
-```
-
-## CDN (Content Delivery Network)
-
-#### CSS link to `<head>`
-
-```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/phothinmg/myanmarwebfonts@cdn/myanmarwebfonts.css">
-
-```
-
-```html
-<link rel="stylesheet" href="https://unpkg.com/myanmarwebfonts@1.0.3/myanmarwebfonts.css">
-
-```
-
-#### Js script to `<body>`
-
-```html
-<script src="https://cdn.jsdelivr.net/gh/phothinmg/myanmarwebfonts@cdn/myanmarwebfonts.js"></script>
-```
-
-#### jQuery script to `<body>`
-
-```html
-<script src="https://cdn.jsdelivr.net/gh/phothinmg/myanmarwebfonts@cdn/jquery-mmwebfonts.js"></script>
-```
-
-## Download .zip
-
-You can download zip file **[here](https://cdn.jsdelivr.net/gh/phothinmg/myanmarwebfonts@cdn/myanmarwebfonts.zip)**.
-
-## Usage
-
-#### Font Family Class
-
-`mmfont-noto` --- `font-family: 'Noto Serif Myanmar';`
-
-`mmfont-padauk` --- `font-family:'Padauk' ;`
-
-`mmfont-khyay` --- `font-family: 'Khyay';`
-
-```html
-<!-- Fonts family class usage -->
-<p class="mmfont-noto">နေကောင်းလား! Hello World</p>
-<p class="mmfont-padauk">နေကောင်းလား! Hello World</p>
-<p class="mmfont-khytay">နေကောင်းလား! Hello World</p>
-
-```
-
-#### Font Effect Class
-
-`mmfont-shadow-multiple`
-`mmfont-3d`
-`mmfont-3d-float`
-`mmfont-emboss`
-`mmfont-anaglyph`
-`mmfont-fire`
-`mmfont-neon`
-
-```html
-<!-- Fonts effect class usage -->
-<p class="mmfont-shadow-multiple">နေကောင်းလား! Hello World</p>
-<p class="mmfont-3d">နေကောင်းလား! Hello World</p>
-<p class="mmfont-3d-float">နေကောင်းလား! Hello World</p>
-<p class="mmfont-emboss">နေကောင်းလား! Hello World</p>
-<p class="mmfont-anaglyph">နေကောင်းလား! Hello World</p>
-<p class="mmfont-fire">နေကောင်းလား! Hello World</p>
-<p class="mmfont-neon">နေကောင်းလား! Hello World</p>
-```
+| Tables   |      Are      |  Cool |
+|----------|:-------------:|------:|
+| col 1 is |  left-aligned | $1600 |
+| col 2 is |    centered   |   $12 |
+| col 3 is | right-aligned |    $1 |
 
 ## License
 
@@ -238,6 +96,7 @@ INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
 DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
 OTHER DEALINGS IN THE FONT SOFTWARE.
+}
 
 
 

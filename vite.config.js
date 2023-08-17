@@ -20,13 +20,7 @@ export default defineConfig({
 			remarkPlugins:[
 				remarkGfm,
 				remarkFrontmatter,
-				[remarkPrism,{
-					plugin: [
-						'toolbar',
-						'copy-to-clipboard',
-						'treeview'
-					]
-				}],
+				remarkPrism,
 				
 				
 			],

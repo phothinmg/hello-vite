@@ -7,11 +7,13 @@ import Footer from "./Footer";
 
 
 
+
 export {
     Header,
     ThemeSelect,
     Hero,
     GithubIcon,
-    Footer
+    Footer,
+
 
 }
