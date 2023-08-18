@@ -16,7 +16,10 @@ https://simplecss.org/
   /* Default (light) theme */
   --bg: #fff;
   --accent-bg: #f5f7ff;
-  --text: #212121;
+  --secondary-bg:#1f1d2a;
+  --nav-text:#fff;
+  --nav-hover:#ffb300;
+  --text: #111827;
   --text-light: #585858;
   --border: #898EA4;
   --accent: #0d47a1;
@@ -33,6 +36,9 @@ https://simplecss.org/
       color-scheme: dark;
       --bg: #212121;
       --accent-bg: #2b2b2b;
+      --secondary-bg:#211a28;
+      --nav-text:#fff;
+      --nav-hover:#ffb300;
       --text: #dcdcdc;
       --text-light: #ababab;
       --accent: #ffb300;
@@ -244,61 +250,7 @@ https://simplecss.org/
     outline-offset: 1px;
   }
   
-  /* Format navigation */
-  header > nav {
-    font-size: 1rem;
-    line-height: 2;
-    padding: 1rem 0 0 0;
-  }
-  
-  /* Use flexbox to allow items to wrap, as needed */
-  header > nav ul,
-  header > nav ol {
-    align-content: space-around;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* List items are inline elements, make them behave more like blocks */
-  header > nav ul li,
-  header > nav ol li {
-    display: inline-block;
-  }
-  
-  header > nav a,
-  header > nav a:visited {
-    margin: 0 0.5rem 1rem 0.5rem;
-    border: 1px solid var(--border);
-    border-radius: var(--standard-border-radius);
-    color: var(--text);
-    display: inline-block;
-    padding: 0.1rem 1rem;
-    text-decoration: none;
-  }
-  
-  header > nav a:hover,
-  header > nav a.current,
-  header > nav a[aria-current="page"] {
-    border-color: var(--accent);
-    color: var(--accent);
-    cursor: pointer;
-  }
-  
-  /* Reduce nav side on mobile */
-  @media only screen and (max-width: 720px) {
-    header > nav a {
-      border: none;
-      padding: 0;
-      text-decoration: underline;
-      line-height: 1;
-    }
-  }
+ 
   
   /* Consolidate box styling */
   aside, details, pre, progress {
@@ -647,13 +599,72 @@ progress {
     padding: 1.5rem;
     margin: 2rem 0;
   }
+  /* Format navigation */
+  header > nav {
+    font-size: 1rem;
+    line-height: 2;
+    padding: 1rem 0 0 0;
+    background-color: var(--secondary-bg);
+  }
+  
+  /* Use flexbox to allow items to wrap, as needed */
+  header > nav ul,
+  header > nav ol {
+    align-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* List items are inline elements, make them behave more like blocks */
+  header > nav ul li,
+  header > nav ol li {
+    display: inline-block;
+  }
+  
+  header > nav a,
+  header > nav a:visited {
+    margin: 0 0.5rem 1rem 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: var(--standard-border-radius);
+    color: var(--nav-text);
+    display: inline-block;
+    padding: 0.1rem 1rem;
+    text-decoration: none;
+  }
+  
+  header > nav a:hover,
+  header > nav a.current,
+  header > nav a[aria-current="page"] {
+    border-color: var(--nav-hover);
+    color: var(--nav-hover);
+    cursor: pointer;
+  }
+  
+  /* Reduce nav side on mobile */
+  @media only screen and (max-width: 720px) {
+    header > nav a {
+      border: none;
+      padding: 0;
+      text-decoration: underline;
+      line-height: 1;
+    }
+  }
 /* Simple Css end */
 
 /*for theme selection from Simple CSS*/
 [data-theme='light']{
     --bg: #fff;
     --accent-bg: #f5f7ff;
-    --text: #212121;
+    --secondary-bg:#1f1d2a;
+    --nav-text:#fff;
+    --nav-hover:#ffb300;
+    --text: #111827;
     --text-light: #585858;
     --border: #898EA4;
     --accent: #0d47a1;
@@ -666,6 +677,9 @@ progress {
     color-scheme: dark;
       --bg: #212121;
       --accent-bg: #2b2b2b;
+      --secondary-bg:#211a28;
+      --nav-text:#fff;
+      --nav-hover:#ffb300;
       --text: #dcdcdc;
       --text-light: #ababab;
       --accent: #ffb300;
@@ -682,10 +696,11 @@ progress {
     grid-auto-flow: column;
     grid-template-areas:
       "nav-l nav-r";
-   
-     
-  }
-  
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: var(--secondary-bg);
+}
+
   .nav-l {
     justify-self: stretch;
     align-self: center;
@@ -696,6 +711,7 @@ progress {
     justify-self: end;
     align-self: center;
     grid-area: nav-r;
+    padding-right: 5px;
 }
 /*footer */
 .footer {  display: grid;
@@ -752,6 +768,17 @@ progress {
     justify-self: center;
     align-self: center;
     grid-area: des;
+  }
+  .top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+  }
+  .main-child{
+    margin-top: 70px; /* Adjust this value to provide spacing between the header and main content */
+    padding: 20px;
   }
 
   /*prism*/

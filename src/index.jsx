@@ -1,6 +1,6 @@
 import { render } from 'preact';
 import { LocationProvider, Router, Route,} from 'preact-iso';
-import { Header ,Footer} from '/components/index.js';
+import { Header} from '/components/index.js';
 import  {Home}  from './pages/Home.jsx';
  import About  from './pages/About.jsx';
 import { NotFound } from './pages/_404.jsx';
@@ -12,7 +12,7 @@ export function App() {
 	return (
 	  <LocationProvider>
 		<Header />
-		<main>
+		<main className={'main-child'}>
 		  <Router>
 			
 			  <Route exact path="/" component={Home} />
@@ -21,8 +21,6 @@ export function App() {
 			
 		  </Router>
 		</main>
-		<hr />
-		<Footer />
 	  </LocationProvider>
 	);
   }

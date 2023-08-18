@@ -13,7 +13,8 @@
 			"/components/*":["components/*"],
 			"/style/*":["style/*"],
 			"/libary/*":["libary/*"],
-			"/posts/*":["posts/*"]
+			"/posts/*":["posts/*"],
+			"/images/*":["images/*"]
 		}
 	},
 	"include": ["node_modules/vite/client.d.ts", "**/*"]

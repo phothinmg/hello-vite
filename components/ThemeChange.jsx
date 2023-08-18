@@ -10,11 +10,11 @@ const ThemeSelect = () => {
   
       // Check if the selected value exists in the array
       if (dataArray.includes(selectedValue)) {
-        resultDiv.innerText = 'Selected: ' + selectedValue;
+        resultDiv.innerText = '';
         // Set the data-theme attribute
         htmlElement.setAttribute('data-theme', selectedValue);
       } else {
-        resultDiv.innerText = 'Value not found in the array.';
+        resultDiv.innerText = '';
       }
     };
   

@@ -5,9 +5,10 @@ import navBarLink from '../libary/navBarLink';
 export default function Header() {
 
 	return (
-		<header>
+	  <div className={'top'}>
+		 <header>
 			<nav>
-				<div className="nav">
+				<div className={'nav'}>
 					<div className="nav-l">
 							{navBarLink.map((link) =>(
 							<a
@@ -22,9 +23,10 @@ export default function Header() {
 						<ThemeSelect/>
 					</div>
 				</div>
-				
-				<hr></hr>
+
 			</nav>
 		</header>
+	  </div>
+		
 	);
 }

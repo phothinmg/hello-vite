@@ -4,6 +4,7 @@ import mdx from '@mdx-js/rollup';
 import remarkGfm from 'remark-gfm';
 import remarkFrontmatter from 'remark-frontmatter';
 import remarkPrism from 'remark-prism';
+import remarkMdxImages from 'remark-mdx-images';
 // https://vitejs.dev/config/
 export default defineConfig({
 	server:{
@@ -21,11 +22,8 @@ export default defineConfig({
 				remarkGfm,
 				remarkFrontmatter,
 				remarkPrism,
-				
-				
-			],
-			
-		}),
-
-	],
+				remarkMdxImages
+				],
+			}),
+		],
 });
