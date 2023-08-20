@@ -5,6 +5,12 @@ import remarkGfm from 'remark-gfm';
 import remarkFrontmatter from 'remark-frontmatter';
 import remarkPrism from 'remark-prism';
 import remarkMdxImages from 'remark-mdx-images';
+import remarkFootnotes from 'remark-footnotes'
+import remarkMath from 'remark-math';
+import rehypeSlug from 'rehype-slug';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+import rehypeKatex from 'rehype-katex';
+import rehypeCitation from 'rehype-citation';
 // https://vitejs.dev/config/
 export default defineConfig({
 	server:{
@@ -22,8 +28,21 @@ export default defineConfig({
 				remarkGfm,
 				remarkFrontmatter,
 				remarkPrism,
-				remarkMdxImages
+				remarkMdxImages,
+				remarkFootnotes,
+				remarkMath,
+
+		
+				
 				],
+			rehypePlugins:[
+				rehypeSlug,
+				rehypeAutolinkHeadings,
+				rehypeKatex,
+				rehypeCitation,
+			]
+			
+			
 			}),
 		],
 });
