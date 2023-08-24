@@ -1,4 +1,4 @@
-import siteData from "../libary/siteData";
+import siteData from "../lib/siteData";
 import { IconBrandGithub } from "@tabler/icons-preact";
 
 function GithubIcon(props) {

@@ -32,13 +32,13 @@ export default defineConfig({
 				remarkFootnotes,
 				remarkMath,
 
+
 		
 				
 				],
 			rehypePlugins:[
 				rehypeSlug,
 				rehypeAutolinkHeadings,
-				rehypeKatex,
 				rehypeCitation,
 			]
 			
