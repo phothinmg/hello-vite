@@ -1,4 +1,4 @@
-import siteData from "../lib/siteData";
+import siteData from "../script-lib/siteData";
 import { GithubIcon } from ".";
 
 export default function (){

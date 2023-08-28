@@ -1,6 +1,6 @@
 
 import {ThemeSelect} from './index';
-import navBarLink from '../lib/navBarLink';
+import navBarLink from '../script-lib/navBarLink';
 
 export default function Header() {
 

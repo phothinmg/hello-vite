@@ -12,10 +12,10 @@
 		"paths": {
 			"/components/*":["components/*"],
 			"/style/*":["style/*"],
-			"/lib/*":["lib/*"],
+			"/script-lib/*":["script-lib/*"],
 			"/posts/*":["posts/*"],
 			"/images/*":["images/*"],
-			"/mdxs/*":["mdxs/*"]
+			"/generated/*":["generated/*"]
 		}
 	},
 	"include": ["node_modules/vite/client.d.ts", "**/*"]

@@ -12,6 +12,9 @@ import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeCitation from 'rehype-citation';
 import remarkMdxFrontmatter from 'remark-mdx-frontmatter';
+
+
+const frontmatterRegex = /export const frontmatter = ({[\s\S]*?});/;
 const mdxFiles = sync('./posts/**/*.{mdx,md}');
 mdxFiles.forEach(async (mdxFilePath) => {
    const mdxContents = await fs.readFile(mdxFilePath);
@@ -34,12 +37,22 @@ mdxFiles.forEach(async (mdxFilePath) => {
         rehypeSlug,
     ]
 });
-const outDir = './mdxs';
-const baseName = path.basename(mdxFilePath, path.extname(mdxFilePath));
-const exportFilePath = path.join(outDir, `${baseName}` + '.jsx');
-fs.writeFile(exportFilePath,`${mdxResults}`);
-
+    const frontmatterContent = `${mdxResults}`.match(frontmatterRegex)[0];
+    const postBodyContent = `${mdxResults}`.replace(frontmatterRegex,'');
+    const frontmatterDir = './generated/frontmatter';
+    const postsDir = './generated/posts';
+    const baseName = path.basename(mdxFilePath, path.extname(mdxFilePath));
+    const exportFrontmatterFilePath = path.join(frontmatterDir,`${baseName}` +  '.js');
+    const exportPostFilePath = path.join(postsDir, `${baseName}` + '.jsx');
+    fs.writeFile(exportFrontmatterFilePath,`${frontmatterContent}`);
+    fs.writeFile(exportPostFilePath,`${postBodyContent}`);
+    
 });
+
+export const frontmatterFiles = sync('./generated/frontmatter/**/*.js');
+export const postsFiles = sync ('./generated/posts/**/*.jsx');
+
+
 
 
 

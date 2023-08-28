@@ -1,9 +1,6 @@
 /*@jsxRuntime automatic @jsxImportSource preact*/
 import {useMDXComponents as _provideComponents} from "@mdx-js/preact";
-export const frontmatter = {
-  "titel": "Post 4",
-  "date": "2023-08-18"
-};
+
 function _createMdxContent(props) {
   const _components = Object.assign({
     h1: "h1",

@@ -1,14 +1,17 @@
+// @ts-nocheck
 
-import { MDXProvider } from "@mdx-js/preact";
-import AboutPost from '/posts/about.mdx';
-
-
+import { frontmatter } from '/generated/frontmatter/about';
+import MDXContent from '/generated/posts/about';
+import formatDate from '../../script-lib/util/formatDate';
 
 export default function About (){
-   
+   const date = formatDate(frontmatter.date);
     return (
-       <MDXProvider>
-        <AboutPost/>
-       </MDXProvider>
+        <>
+        <h1>{frontmatter.title}</h1>
+        <p>{date}</p>
+        <MDXContent/>
+        
+        </>
     )
 }
