@@ -6,7 +6,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "node ./script-lib/mdxCompile.js && vite",
-		"build": "vite build",
+		"build": "node ./script-lib/mdxCompile.js && vite build",
 		"preview": "vite preview",
 		"test": "vite"
 	},
