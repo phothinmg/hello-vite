@@ -1,5 +1,5 @@
 # Hello Vite with Preact
-![hello-vite](https://image.myanmaros.com/hello-vite.png)
+
 
 ### About
 
